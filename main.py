@@ -1,22 +1,27 @@
-my_name = input("what is your name")
-my_age= input ("how old are you")
+my_name= input("whats your name?")
+my_age= input("How old are you?")
 
-print(f"My name is {my_name} and I am {my_age} years old")
+print(f"my name is {my_name} and my age is {my_age}")
 
-first_number= int( input ("first number "))
-secound_number= int( input(" second number "))
+first_number= int(input("first number"))
+second_number= int(input("second number"))
+operation=input(" select +-*/")
 
-operation= input ("what you want to chose, (*,+,-,/)")
+if operation== "+":
+ print(first_number + second_number)
+elif operation== "*":
+ print(first_number*second_number)
+elif operation == "/":
+  print(first_number/second_number)
+elif operation== "-":
+ print (first_number-second_number)
 
-if operation =="*":
-    print(first_number*secound_number) 
-elif operation =="+":
-        print(first_number+secound_number) 
 
+bus_capacity= 60
+people_inbus=int(input("how many people are in the bus"))
+empty_seats = bus_capacity - people_inbus
 
-elif operation =="/":
- print(first_number/secound_number) 
-
- 
-elif operation =="-":
-            print(first_number-secound_number) 
+if bus_capacity>= people_inbus :
+ print (f"there is {empty_seats} empty seats")
+elif bus_capacity< people_inbus :
+ print ("there is no seats")
